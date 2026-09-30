@@ -1,0 +1,170 @@
+write("================================")
+write("       NURTURE SHOWCASE")
+write("================================")
+
+write("")
+write("=== COMMAND LINE INPUT ===")
+name = input("What is your name? ")
+age = int(input("How old are you? "))
+write("Hello " + name)
+write("Age: " + str(age))
+
+write("")
+write("=== VARIABLES / TYPES ===")
+score = 95
+numbers = [1, 2, 3, 4, 5]
+write(score)
+write(numbers)
+write(type(score))
+write(len(numbers))
+
+write("")
+write("=== CONDITIONS ===")
+if age >= 18:
+    write("Adult")
+elif age >= 13:
+    write("Teenager")
+else:
+    write("Child")
+
+write("")
+write("=== BOOLEAN LOGIC ===")
+write(age >= 13 and age <= 19)
+write(age < 13 or age > 19)
+write(not false)
+
+write("")
+write("=== WHILE ===")
+x = 1
+while x <= 3:
+    write(x)
+    x = x + 1
+
+write("")
+write("=== LOOP ===")
+loop i in 1..3:
+    write(i)
+
+write("")
+write("=== NEW LOOP SYNTAX ===")
+loop(1, 3)->write("hello")
+loop(3, 1)->write(i)
+
+write("")
+write("=== FUNCTION ===")
+function add(a, b):
+    return a + b
+write(add(10, 20))
+
+write("")
+write("=== TRY / EXCEPT ===")
+try:
+    write(unknown_variable)
+except:
+    write("Error caught successfully")
+
+write("")
+write("=== MODULES ===")
+link math
+link file
+link folder
+link json
+link net
+link web
+link crypto
+link system
+link process
+link time
+link check
+
+write("")
+write("=== MATH ===")
+write(math.sqrt(25))
+write(math.sin(0))
+write(math.cos(0))
+write(math.floor(4.8))
+write(math.ceil(4.2))
+write(math.round(4.6))
+write(math.abs(-10))
+write(math.random())
+
+write("")
+write("=== FILE ===")
+file.write("nurture_demo.txt", "Hello from Nurture")
+write(file.exists("nurture_demo.txt"))
+write(file.read("nurture_demo.txt"))
+file.append("nurture_demo.txt", "\nSecond line")
+write(file.read("nurture_demo.txt"))
+file.delete("nurture_demo.txt")
+
+write("")
+write("=== FOLDER ===")
+folder.create("nurture_demo")
+write(folder.exists("nurture_demo"))
+write(folder.list("."))
+folder.delete("nurture_demo")
+
+write("")
+write("=== JSON ===")
+data = {"name": "Udit", "language": "Nurture"}
+json.write("nurture_demo.json", data)
+write(json.read("nurture_demo.json"))
+text = json.make(data)
+write(text)
+write(json.parse(text))
+file.delete("nurture_demo.json")
+
+write("")
+write("=== NETWORK ===")
+write(net.hostname())
+write(net.localip())
+write(net.interfaces())
+write(check.port("127.0.0.1", 80))
+try:
+    write(net.resolve("example.com"))
+    write(net.ping("example.com"))
+except:
+    write("Network lookup/ping unavailable on this machine")
+
+write("")
+write("=== WEB ===")
+try:
+    response = web.get("https://example.com")
+    write(response.status)
+    write(response.text)
+    write(web.status("https://example.com"))
+    write(web.headers("https://example.com"))
+    write(web.cookies("https://example.com"))
+except:
+    write("Web access unavailable")
+
+write("")
+write("=== CRYPTO ===")
+write(crypto.sha256("Hello Nurture"))
+
+write("")
+write("=== SYSTEM ===")
+write(system.os())
+write(system.kernel())
+write(system.cpu())
+write(system.memory())
+write(system.hostname())
+write(system.architecture())
+write(system.env("PATH"))
+
+write("")
+write("=== PROCESS ===")
+write(process.list())
+
+write("")
+write("=== GUI API ===")
+write("gui.window(title, width, height) is available in the GUI runtime")
+
+write("")
+write("=== TIME ===")
+write(time.now())
+
+write("")
+write("================================")
+write("       SHOWCASE COMPLETE")
+write("================================")

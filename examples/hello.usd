@@ -1,0 +1,10 @@
+name = "Udit"
+write("Hello from Nurture, " + name)
+
+loop i in 1..5:
+    write(i)
+
+function add(a, b):
+    return a + b
+
+write(add(10, 20))
