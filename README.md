@@ -2,7 +2,8 @@
 
 
 
-https://github.com/user-attachments/assets/364bc784-1002-4cef-93c0-7544f9d41f47
+<img width="400" height="225" alt="nurture_logo" src="https://github.com/user-attachments/assets/52bf78aa-a28f-40b4-bf47-a3aa5d06c7f0" />
+
 
 
 
