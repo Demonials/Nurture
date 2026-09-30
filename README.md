@@ -1,5 +1,11 @@
 # Nurture
 
+
+
+https://github.com/user-attachments/assets/364bc784-1002-4cef-93c0-7544f9d41f47
+
+
+
 Nurture is an experimental, beginner-friendly programming language and IDE using `.usd` source files.
 
 ## Current release: 0.1.0
